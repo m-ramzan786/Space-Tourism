@@ -7,7 +7,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      href="./assets/logo-favicon-32x32.png"
     />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,11 +27,13 @@
     <a class="skip-to-content" href="#main">Skip to content</a>
     <header class="primary-header flex">
       <div>
-        <img
-          src="assets/shared/logo.svg"
-          alt="space tourism logo"
-          class="logo"
-        />
+        <a href="index.html">
+          <img
+            src="assets/shared/logo.svg"
+            alt="space tourism logo"
+            class="logo"
+          />
+        </a>
       </div>
       <button class="mobile-nav-toggle" aria-controls="primary-navigation">
         <span class="sr-only" aria-expanded="false">Menu</span>
@@ -119,7 +121,7 @@
         tabindex="0"
       >
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">The terminology...</h2>
+          <h2 class="fs-400 ff-serif uppercase">The terminology...</h2>
           <p class="fs-700 uppercase ff-serif">Launch vehicle</p>
         </header>
         <p>
@@ -131,22 +133,6 @@
         </p>
       </article>
 
-      <picture id="vehicle-image">
-        <source
-          media="(min-width: 50rem)"
-          srcset="./assets/technology/image-launch-vehicle-portrait.webp"
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 45rem)"
-          srcset="./assets/technology/image-launch-vehicle-landscape.webp"
-          type="image/webp"
-        />
-        <img
-          src="assets/technology/image-launch-vehicle-landscape.jpg"
-          alt="Launch Vehicle"
-        />
-      </picture>
       <!-- spaceport -->
       <article
         class="technology-details flow hidden"
@@ -155,7 +141,7 @@
         tabindex="0"
       >
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">The terminology...</h2>
+          <h2 class="fs-400 ff-serif uppercase">The terminology...</h2>
           <p class="fs-700 uppercase ff-serif">Spaceport</p>
         </header>
         <p>
@@ -166,22 +152,6 @@
         </p>
       </article>
 
-      <picture id="spceport-image" class="hidden">
-        <source
-          media="(min-width: 50rem)"
-          srcset="./assets/technology/image-spaceport-portrait.webp"
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 45rem)"
-          srcset="./assets/technology/image-spaceport-landscape.webp"
-          type="image/webp"
-        />
-        <img
-          src="assets/technology/image-spaceport-landscape.jpg"
-          alt="Spaceport"
-        />
-      </picture>
       <!-- capsule -->
       <article
         class="technology-details flow hidden"
@@ -190,7 +160,7 @@
         tabindex="0"
       >
         <header class="flow flow--space-small">
-          <h2 class="fs-600 ff-serif uppercase">The terminology...</h2>
+          <h2 class="fs-400 ff-serif uppercase">The terminology...</h2>
           <p class="fs-700 uppercase ff-serif">Space capsule</p>
         </header>
         <p>
@@ -202,20 +172,34 @@
         </p>
       </article>
 
-      <picture id="capsule-image" class="hidden">
+      <picture id="vehicle-image">
         <source
-          media="(min-width: 50rem)"
-          srcset="./assets/technology/image-space-capsule-portrait.webp"
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 45rem)"
-          srcset="./assets/technology/image-space-capsule-landscape.webp"
-          type="image/webp"
+          srcset="./assets/technology/image-launch-vehicle-portrait.jpg"
+          media="(min-width: 45em)"
         />
         <img
-          src="assets/technology/image-space-capsule-landscape.jpg"
-          alt="Space capsule"
+          src="./assets/technology/image-launch-vehicle-landscape.jpg"
+          alt="Launch Vehicle"
+        />
+      </picture>
+      <picture class="hidden" id="spaceport-image">
+        <source
+          srcset="./assets/technology/image-spaceport-portrait.jpg"
+          media="(min-width: 45em)"
+        />
+        <img
+          src="./assets/technology/image-spaceport-landscape.jpg"
+          alt="Spaceport"
+        />
+      </picture>
+      <picture class="hidden" id="capsule-image">
+        <source
+          srcset="./assets/technology/image-space-capsule-portrait.jpg"
+          media="(min-width: 45em)"
+        />
+        <img
+          src="./assets/technology/image-space-capsule-landscape.jpg"
+          alt="Space Capsule"
         />
       </picture>
     </main>
